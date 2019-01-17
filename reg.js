@@ -1,4 +1,3 @@
-var Wallet = require('ethereumjs-wallet')
 var EthUtil = require('ethereumjs-util')
 var Augur = require('augur.js')
 var augur = new Augur()
