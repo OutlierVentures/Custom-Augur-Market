@@ -8,7 +8,7 @@ Runs on the mainnet and Kovan testnet.
 
 - Linux with `build-essential` and `git`, or MacOS with command line tools.
 - Docker & Node 10.
-- An Ethereum account with some ETH & REP. Current costs are approx. 0.013ETH and 0.35REP per market instantiation.
+- An Ethereum account with some ETH & REP. Current costs are approx 0.013ETH and 0.35REP per market instantiation.
 
 ## Installing
 
