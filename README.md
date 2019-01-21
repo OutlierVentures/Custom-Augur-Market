@@ -86,7 +86,7 @@ You can see the market you created on an Augur app, for example those created by
 
 ### Account registration
 
-Account approval (`approveAugur` in  `reg.js`) authoriuses the Augur API to spend tokens on your account. This is required for transactions on Augur, e.g. for sending tokens to someone else.
+Account approval (`approveAugur` in  `reg.js`) authorises the Augur API to spend tokens on your account. This is required for transactions on Augur, e.g. for sending tokens to someone else.
 
 To use the function, uncomment it in `reg.js`.
 
