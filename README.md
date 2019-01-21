@@ -27,7 +27,7 @@ Two components: Augur node and Augur.JS.
 ```
 By default, this will start on the Kovan testnet. Add the option `mainnet` for the mainnet.
 
-After starting the node for the first time, it will sync up with the blockchain, outputting lines like the below for a few minutes:
+When starting the node for the first time, it will sync up with the blockchain, outputting lines like the below for a few minutes:
 
 ```
 ...
@@ -41,7 +41,7 @@ Processing 1 logs
 ...
 ```
 
-The block numbers and dates give an indication of the progress. When it's done syncing, you'll see recent blocks appearing as below. The node is then ready to use.
+The block numbers and dates give an indication of the progress. You can create a market while it is syncing, but it won't go through until the sync is finished. When the blockchain is done syncing, you'll see recent blocks appearing as below. The node is then ready to use.
 
 ```
 ...
@@ -86,7 +86,11 @@ You can see the market you created on an Augur app, for example those created by
 
 ### Account registration
 
-[add note on uncommenting account approval code and when/why it's necessary]
+Account approval (`approveAugur` in  `reg.js`) authoriuses the Augur API to spend tokens on your account. This is required for transactions on Augur, e.g. for sending tokens to someone else.
+
+To use the function, uncomment it in `reg.js`.
+
+To learn about exactly what is being approved, see [the Augur docs](https://docs.augur.net/#accounts-functions).
 
 ### Getting Kovan testnet REP tokens
 
