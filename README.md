@@ -27,6 +27,37 @@ Two components: Augur node and Augur.JS.
 ```
 By default, this will start on the Kovan testnet. Add the option `mainnet` for the mainnet.
 
+After starting the node for the first time, it will sync up with the blockchain, outputting lines like the below for a few minutes:
+
+```
+...
+got 0 logs in blocks { fromBlock: 8715109, toBlock: 8715828 }
+Fetching blocks details from 8509189 to 8509908
+got 0 logs in blocks { fromBlock: 8715829, toBlock: 8716548 }
+Fetching blocks details from 8510469 to 8510469
+Fetching blocks details from 8510629 to 8511348
+new block: 8510469, 1535353000 (Mon Aug 27 2018 06:56:40 GMT+0000 (Coordinated Universal Time))
+Processing 1 logs
+...
+```
+
+The block numbers and dates give an indication of the progress. When it's done syncing, you'll see recent blocks appearing as below. The node is then ready to use.
+
+```
+...
+new block: 10140787, 1548066740 (Mon Jan 21 2019 10:32:20 GMT+0000 (Coordinated Universal Time))
+new block: 10140788, 1548066756 (Mon Jan 21 2019 10:32:36 GMT+0000 (Coordinated Universal Time))
+new block: 10140789, 1548066760 (Mon Jan 21 2019 10:32:40 GMT+0000 (Coordinated Universal Time))
+new block: 10140790, 1548066764 (Mon Jan 21 2019 10:32:44 GMT+0000 (Coordinated Universal Time))
+new block: 10140791, 1548066776 (Mon Jan 21 2019 10:32:56 GMT+0000 (Coordinated Universal Time))
+new block: 10140792, 1548066792 (Mon Jan 21 2019 10:33:12 GMT+0000 (Coordinated Universal Time))
+...
+```
+
+
+
+
+
 ### Augur.js
 
 Specify desired network, account and private key with environment variables:
